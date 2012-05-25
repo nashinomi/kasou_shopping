@@ -1,0 +1,640 @@
+
+body{
+	margin: 0px;
+	padding: 0px;
+	<!--
+	background-image: url(../img/backk.jpg);
+	background-repeat: repeat-x;
+	background-color: R153 G255 B1727;
+	background-position: left bottom;
+	background-attachment: fixed;
+	-->
+	overflow-x: auto;
+}
+hr{margin: 1em 0 1em;
+border: green 2px solid;}
+
+
+#container{
+	width: 900px;
+	margin: auto;
+	overflow-x: auto;
+}
+<!--
+/***********************
+	headスタイル
+************************/
+-->
+#header{
+	width:100%;
+	background-image: url(../img/header02.jpg);
+	overflow:hidden;
+}
+#header #logoTitle{
+	border: none;
+	float: left;
+}
+
+#logoTitle{
+	font-size: 24px;
+	color: white;
+	margin-left:30px;
+}
+#logoTitle img{
+	width:100px;
+	height:100px;
+	margin-left:-30px;
+	border:none;
+}
+#logoTitle a{
+	block: display;
+	line-width: 100px;
+	line-height: 100px;
+	border:none;
+}
+#logoTitle a:focus{
+	outline:none;
+}
+
+.left{	float:left;	}
+.clear{	clear:left;	}
+
+table.headLink{
+	margin:0;
+	width:100%;
+	border-collapse: collapse;
+	border-top: solid silver 2px;
+	border-left: solid silver 2px;
+	border-right: solid silver 2px;
+
+}
+.headLink td{
+	width:20%;
+	height:40px;
+	padding:0;
+	text-align:center;
+	font-size: 16px;;
+	font-weight: bold;
+	background-image: url(../img/gradg.jpg);
+	border-top: solid silver 1px;
+	border-left: solid silver 1px;
+	border-right: solid silver 1px;
+}
+
+.headLink td:hover{
+	background-position:0 -45px;
+}
+
+.headLink td a	{
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+
+}
+.headLink td a:link			{	color: #3CB371;	}
+.headLink td a:visited		{	color: #4682B4;	}
+.headLink td a:hover		{	color: #00FF7F;	}
+
+/*
+	商品検索スタイル
+*/
+#retrievalForm{
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+#retrievalForm #text{
+	width:150px;
+	padding: 4px 10px;
+	font-size: 14px;
+	line-height: 1;
+	border: none;
+	outline: none;
+	background: none;
+	background-image: url(../img/textbox.png);
+	background-repeat: no-repeat;
+}
+#retrievalForm #submit{
+	width:50px;
+	padding: 4px 0;
+	font-size: 14px;
+	line-height: 1;
+	border: none;
+	outline: none;
+	background: none;
+	background-image: url(../img/button.png);
+	background-repeat: no-repeat;
+	margin-left: 4px;
+	vartical-align: top;
+}
+
+#retrievalForm #submit:hover{
+	background-position: 0 -32px;
+}
+#retrievalForm span{
+	font-size: small;
+	font-weight: bold;
+	color: black;
+}
+<!--
+/************************
+	mainスタイル
+*************************/
+-->
+
+#main{
+	width: 700px;
+	margin:10px 0;
+	float: left;
+	overflow:hidden;
+}
+
+<!--
+/************************
+	contentスタイル
+*************************/
+-->
+#content{
+	width: 500px;
+	float: right;
+	background-color: white;
+}
+
+#content h2{
+	font-size: 18px;
+	margin: 0;
+	background-image: url(../img/mark.png);
+	background-repeat: no-repeat;
+	border-bottom: solid green 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
+
+#goodssort{
+	margin: 10px;
+}
+/*
+	リスト表示スタイル
+*/
+#goodsList{
+	margin: 5p 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#goodsList table{
+	margin: 5px 0;
+	width:500px;
+}
+
+#goodsList table img{
+	width:100px;
+	height:100px;
+	border: none;
+	padding-bottom:10px;
+}
+
+#goodsList table a{
+	text-decoration: none;
+}
+
+#goodsList table td{
+	height:30px;
+}
+
+/*
+	商品詳細スタイル
+*/
+.goodsInfo{
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.goodsInfo .goodsimage{
+	margin: 0 10px 0 0;
+	width: 180px;
+	height: 180px;
+	float: left;
+	vertical-align: top;
+	background-image: url(../img/fream.png);
+}
+.goodsInfo .goodsimage img{
+	margin-top: 0;
+	margin-left: 5px;
+	width:175px;
+	height:175px;
+}
+
+.goodsInfo h4{
+	text-align: center;
+	font-size: 22px;
+	font-weight:normal;
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+.goodsInfo .goodsmaker{
+	text-align: center;
+}
+.goodsInfo .goodsright{
+	margin-left:350px;
+}
+.goodsInfo p{
+	margin-top: 20px;
+}
+.goodsInfo p span{
+	font-size: 12px;
+}
+.goodsInfo hr{
+	margin-top: -10px;
+	border: dashed green 1px;
+}
+
+.goodsInfo .infocart{
+	margin: 20px 0 10px 180px;
+}
+.goodsInfo button{
+}
+
+.goodsnotes{
+	margin-top:0px;
+	margin-left:10px;
+}
+
+/*
+	オススメ商品スタイル
+*/
+.goodsMatchcategory{
+	margin:5px 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.categoryMatchtable{
+	width:100%;
+	border-collapse: collapse;
+}
+.categoryMatchtable img{
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+.categoryMatchtable td{
+	font-size: x-small;
+}
+
+/*
+	カートのグッズデータを表示する
+*/
+
+.goodsInfo_cart{
+	margin-bottom:20px;
+}
+
+.goodsInfo_cart p{
+	margin-top: 20px;
+}
+
+.goodsInfo_cart table{
+	width:100%;
+	border-collapse: collapse;
+}
+
+.goodsInfo_cart .infoTable_head{
+	background-color: lightcyan;
+}
+.goodsInfo_cart .infoTable_head th{
+	padding: 10px 0;
+	font-weight: normal;
+}
+.goodsInfo_cart .infoTable_main{
+	padding: 10px 0;
+	text-align:center;
+	border-bottom: dashed black 1px;
+}
+.goodsInfo_cart .infoTable_main a{
+	text-decoration: none;
+}
+.goodsInfo_cart .infoTable_main span{
+	font-size: 14px;
+}
+.goodsInfo_cart .infoTable_sub{
+	text-align:right;
+	border-bottom: dashed black 1px;
+}
+
+
+.goodsInfo_cart img{
+	margin:0;
+	width:150px;
+	height:150px;
+	float: left;
+	vertical-align: top;
+}
+
+.totalPriceCart{
+	font-size:18px;
+	margin-left:150px;
+}
+
+.totalPriceCart b{
+	color:red;
+}
+
+/*
+	会員登録フォーム
+*/
+#Memberform{
+	width:100%;
+}
+
+#Memberform p{
+	font-size: 12px;
+}
+#Memberform span{
+	font-size: 12px;
+}
+#Memberform span.not_userid{
+	color:red;
+}
+#Memberform span.ok_userid{
+	color:blue;
+}
+
+
+#Memberform table{
+
+	width:100%;
+}
+#Memberform table th{
+	background-color: lightcyan;
+	text-align:left;
+	width:120px;
+	font-weight: normal;
+}
+.formbutton{
+	text-align:center;
+}
+
+<!--
+/************************
+	leftsideスタイル
+*************************/
+-->
+#leftside{
+	width: 180px;
+	float: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#leftside h3{
+	font-size: 16px;
+	margin: 0;
+	background-repeat: no-repeat;
+	border-bottom: solid green 2px;
+	padding-top: 7px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	margin-bottom: 10px;
+}
+
+.sideLink{
+	margin-top:5px;
+	margin-right:5px;
+	margin-left:5px;
+}
+.sideLink li{
+	display:block;
+	height:40px;
+	width:170px;
+	list-style: none;
+	margin-top:5px;
+}
+
+.sideLink .kitchen_side a{
+	background-image: url(../img/kitchen.jpg);
+}
+.sideLink .living_side a{
+	background-image: url(../img/Living.jpg);
+}
+.sideLink .bed_side a{
+	background-image: url(../img/bed.jpg);
+}
+.sideLink .bas_side a{
+	background-image: url(../img/bas.jpg);
+}
+.sideLink .entrance_side a{
+	background-image: url(../img/entrance.jpg);
+}
+.sideLink .syu_side a{
+	background-image: url(../img/syu.jpg);
+}
+.sideLink .zakka_side a{
+	background-image: url(../img/zakka.jpg);
+}
+.sideLink .dou_side a{
+	background-image: url(../img/dou.jpg);
+}
+.sideLink .car_side a{
+	background-image: url(../img/car.jpg);
+}
+.sideLink .gakki_side a{
+	background-image: url(../img/gakki.jpg);
+}
+
+
+.sample1 {
+}
+
+.sideLink abbr {
+    font-style: normal;
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+
+.sideLink span.delimiter,
+.sideLink span.remark {
+    display: none;
+    }
+
+.sideLink abbr:hover>span.remark {
+    display: block;
+    position: absolute;
+    top: -10pz;
+    left: -30px;
+    width: 12em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: #ccc solid 2px;
+    color: #000;
+    background: #efe;
+    font-size: 80%;
+    line-height: 1.2em;
+    z-index: 2;
+    }
+
+
+.sideLink a{
+	display: block;
+	text-align:center;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight:bold;
+	line-height: 40px;
+}
+.sideLink a:link		{	color: black;	}
+.sideLink a:visited		{	color: MediumVioletRed;	}
+.sideLink a:hover{
+	background-color:white;
+	background-position: 0 -40px;
+	color: blue;
+	filter : alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity: 0.7;
+}
+
+/*
+	loginFormスタイル
+*/
+#loginForm{
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+#loginForm #text{
+	width:150px;
+	padding: 4px 10px;
+	font-size: 14px;
+	line-height: 1;
+	border: none;
+	outline: none;
+	background: none;
+	background-image: url(../img/textbox.png);
+	background-repeat: no-repeat;
+}
+
+#loginForm #submit{
+	width:150px;
+	padding: 4px 0;
+	font-size: 14px;
+	line-height: 1;
+	border: none;
+	outline: none;
+	background: none;
+	background-image: url(../img/button02.png);
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	vartical-align: top;
+}
+
+#loginForm #submit:hover{
+	background-position: 0 -32px;
+}
+
+#loginForm form .infomess{
+	font-weight: bold;
+	font-size: small;
+	color: black;
+}
+#loginForm form .infomess strong{
+	font-weight: bold;
+	font-size: large;
+	color: red;
+}
+
+#loginForm input{
+	width:150px;
+
+}
+
+<!--
+/***********************
+	rightsideスタイル
+************************/
+-->
+#rightside{
+	width: 180px;
+	float: right;
+	margin:10px 0;
+	overflow-y: auto;
+}
+
+.posttext	{font-size: 0.875em;
+	line-height: 1.5
+}
+
+.headInfo img{
+	margin-top:2px;
+	margin-left:2px;
+	width: 20px;
+	height: 20px;
+	vertical-align: text-bottom;
+}
+
+.Infomess{
+	margin-left:10px;
+	font-size: large;
+	font-weight: bold;
+}
+
+.checkImage{
+	margin-top:2px;
+	margin-left:2px;
+	width: 20px;
+	height: 20px;
+	vertical-align: text-bottom;
+}
+
+.cartTable{
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.contentLine{
+	position: absolute;
+	top: 280px;
+	left: 0px;
+	width:100%;
+}
+#contentLine{
+	margin-left: 15px;
+	width: 570px;
+	color: black;
+	border: dotted Brown 3px;
+}
+
+
+#guid{
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	border: solid black 1px;
+	background-color: #7FFFD4;
+}
+#guid span{
+	color:red;
+}
+
+td#tableCreatematch_bottom{
+	border-bottom: dashed black 1px;
+}
+td#tableCreatematch_right{
+	border-right: dashed black 1px;
+}
+td#tableCreatematch_bottom_right{
+	border-right: dashed black 1px;
+	border-bottom: dashed black 1px;
+}
+
+#footer{
+	clear: both;
+	width:100%;
+	margin-top:5px;
+	background-color:white;
+	border-top: groove green 3px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
