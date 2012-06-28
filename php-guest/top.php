@@ -144,7 +144,7 @@ $cCategory= new Category();
 				    avatars: false,
 				    behavior: 'all'
 				  }
-				}).render().setUser('Na2486').start();
+				}).render().setUser('nashinomi_test').start();
 			</script>
 		</div>
 
